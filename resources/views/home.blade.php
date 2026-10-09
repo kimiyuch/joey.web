@@ -31,7 +31,7 @@
         {{-- Hero --}}
         <section class="relative pt-10 pb-24 sm:pt-16 sm:pb-32">
             <div class="mx-auto max-w-6xl px-6 text-center lg:px-8">
-                <img src="{{ asset('images/joey.png') }}" alt="The Joey app icon: a baby koala peeking out of a blue folder" class="mx-auto size-32 sm:size-40">
+                <img src="{{ asset('images/joey.webp') }}" width="384" height="384" fetchpriority="high" alt="The Joey app icon: a baby koala peeking out of a blue folder" class="mx-auto size-32 sm:size-40">
                 <h1 class="mx-auto mt-8 max-w-[20ch] font-display text-5xl font-semibold tracking-tight text-balance text-gum-950 sm:text-7xl">
                     Torrents, tucked safely in the pouch
                 </h1>
@@ -131,19 +131,19 @@
 
                 <ol role="list" class="mt-16 grid grid-cols-1 gap-x-12 gap-y-12 sm:grid-cols-3">
                     <li>
-                        <div class="font-display text-base/7 font-semibold text-gum-500 tabular-nums">01</div>
+                        <div class="font-display text-base/7 font-semibold text-gum-600 tabular-nums">01</div>
                         <h3 class="mt-2 text-base/7 font-semibold text-gum-950">Download</h3>
                         <p class="mt-1 text-base/7 text-pretty text-neutral-600">
                             Download <a href="{{ $download }}" class="font-semibold text-gum-700 underline decoration-gum-300 underline-offset-4 hover:decoration-gum-600">Joey.dmg</a> and open it.
                         </p>
                     </li>
                     <li>
-                        <div class="font-display text-base/7 font-semibold text-gum-500 tabular-nums">02</div>
+                        <div class="font-display text-base/7 font-semibold text-gum-600 tabular-nums">02</div>
                         <h3 class="mt-2 text-base/7 font-semibold text-gum-950">Drag to Applications</h3>
                         <p class="mt-1 text-base/7 text-pretty text-neutral-600">Drag Joey onto the Applications folder in the window that opens.</p>
                     </li>
                     <li>
-                        <div class="font-display text-base/7 font-semibold text-gum-500 tabular-nums">03</div>
+                        <div class="font-display text-base/7 font-semibold text-gum-600 tabular-nums">03</div>
                         <h3 class="mt-2 text-base/7 font-semibold text-gum-950">Open Anyway</h3>
                         <p class="mt-1 text-base/7 text-pretty text-neutral-600">
                             Open Joey. When macOS says it can’t verify the developer, go to System Settings → Privacy &amp; Security, scroll down and click Open Anyway.

@@ -15,12 +15,16 @@
     "file": "assets/figtree-600-normal-Cv_xCTDl.woff2",
     "src": "_figtree-600-normal-Cv_xCTDl.woff2"
   },
-  "_fonts-BmOsrNRl.css": {
-    "file": "assets/fonts-BmOsrNRl.css",
-    "src": "_fonts-BmOsrNRl.css"
+  "_fonts-Dj1WdnDY.css": {
+    "file": "assets/fonts-Dj1WdnDY.css",
+    "src": "_fonts-Dj1WdnDY.css"
+  },
+  "_inter-400-600-normal-B7rthDxM.woff2": {
+    "file": "assets/inter-400-600-normal-B7rthDxM.woff2",
+    "src": "_inter-400-600-normal-B7rthDxM.woff2"
   },
   "resources/css/app.css": {
-    "file": "assets/app-Co-w-Elu.css",
+    "file": "assets/app-BfzK6z-x.css",
     "name": "app",
     "names": [
       "app.css"

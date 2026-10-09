@@ -20,8 +20,6 @@
     <link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}">
     <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
 
-    <link rel="preconnect" href="https://rsms.me">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     @fonts
 
     @vite(['resources/css/app.css'])

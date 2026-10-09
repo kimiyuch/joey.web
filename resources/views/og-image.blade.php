@@ -3,7 +3,6 @@
 <html lang="en" class="antialiased">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     @fonts
     @vite(['resources/css/app.css'])
 </head>
