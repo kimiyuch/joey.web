@@ -1,0 +1,29 @@
+@import 'tailwindcss' source(none);
+
+/* Only scan the templates; nothing else in the project contains classes. */
+@source '../views';
+@source '../js';
+
+@theme {
+    --font-sans: 'InterVariable', ui-sans-serif, system-ui, sans-serif;
+    --font-sans--font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    --font-display: var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
+
+    /* Eucalyptus green, taken from the app icon. */
+    --color-gum-50: #f1f8f4;
+    --color-gum-100: #dcefe3;
+    --color-gum-200: #bbdfca;
+    --color-gum-300: #8cc7a8;
+    --color-gum-400: #5fa983;
+    --color-gum-500: #3f8d68;
+    --color-gum-600: #3f7d63;
+    --color-gum-700: #2f6450;
+    --color-gum-800: #285141;
+    --color-gum-900: #224337;
+    --color-gum-950: #10261e;
+
+    /* Finder-folder blue from the icon. */
+    --color-pouch-300: #8fd0ff;
+    --color-pouch-400: #62b4f2;
+    --color-pouch-500: #4e9fe0;
+}
