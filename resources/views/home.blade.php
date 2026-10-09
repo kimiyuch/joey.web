@@ -19,10 +19,7 @@
     <div class="absolute inset-x-0 top-0 -z-10 h-[44rem] bg-linear-to-b from-gum-50 to-white"></div>
 
     <header class="mx-auto flex max-w-6xl items-center justify-between gap-x-6 px-6 py-5 lg:px-8">
-        <a href="/" aria-label="Homepage" class="flex items-center gap-x-2.5">
-            <img src="{{ asset('images/joey.png') }}" alt="" class="size-10">
-            <div class="font-display text-xl font-semibold text-gum-950">Joey</div>
-        </a>
+        <a href="/" aria-label="Homepage" class="font-display text-xl font-semibold text-gum-950">Joey</a>
         <nav class="flex items-center gap-x-8">
             <a href="#features" class="text-sm/6 font-medium text-neutral-700 hover:text-gum-700 max-sm:hidden">Features</a>
             <a href="#install" class="text-sm/6 font-medium text-neutral-700 hover:text-gum-700 max-sm:hidden">Install</a>
@@ -159,10 +156,7 @@
 
     <footer class="border-t border-neutral-950/5">
         <div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-            <div class="flex items-center gap-x-2.5">
-                <img src="{{ asset('images/joey.png') }}" alt="" class="size-7">
-                <p class="text-sm/6 text-neutral-600">Joey, made by <a href="https://kimiyu.ch" class="font-medium text-gum-800 hover:text-gum-600">kimiyu.ch</a></p>
-            </div>
+            <p class="text-sm/6 text-neutral-600">Joey, made with <span aria-label="love">❤️</span> by <a href="https://kimiyu.ch" class="font-medium text-gum-800 hover:text-gum-600">kimiyu.ch</a></p>
             <nav class="flex gap-x-6">
                 <a href="{{ $repository }}" class="text-sm/6 font-normal text-neutral-600 hover:text-gum-700">GitHub</a>
                 <a href="{{ $repository }}/releases" class="text-sm/6 font-normal text-neutral-600 hover:text-gum-700">Releases</a>
