@@ -36,7 +36,7 @@
                     Torrents, tucked safely in the pouch
                 </h1>
                 <p class="mx-auto mt-6 max-w-[48ch] text-lg/8 text-pretty text-neutral-600 sm:text-xl/8">
-                    Joey is a small, native BitTorrent client for your Mac. Open a magnet link, pick the files you want, and let Joey carry them home.
+                    Joey is a small, native BitTorrent client for your Mac. Open a magnet link, pick the files you want, and let Joey carry them home. When they get there, watch them right in Joey.
                 </p>
                 <div class="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
                     <a href="{{ $download }}" class="inline-flex items-center gap-x-2 rounded-full bg-gum-600 py-3 pr-5 pl-4 text-base/6 font-semibold text-white shadow-sm hover:bg-gum-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gum-600">
