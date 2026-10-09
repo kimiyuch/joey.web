@@ -5,11 +5,11 @@
     $features = [
         ['icon' => 'link', 'title' => 'Magnet links and torrent files', 'body' => 'Click a magnet link in your browser, double-click a .torrent file, or drop one onto the window.'],
         ['icon' => 'list-bullet', 'title' => 'Pick your files', 'body' => 'Only need one file from a big torrent? Untick the rest and Joey skips them.'],
+        ['icon' => 'film', 'title' => 'Built-in video player', 'body' => 'Watch what you’ve downloaded right in Joey, or open any video from Finder. MKV and most other formats, with subtitles, audio tracks and resume where you left off.'],
         ['icon' => 'play-circle', 'title' => 'Download in order', 'body' => 'Fetch a video from start to finish, so you can start watching before it’s done.'],
         ['icon' => 'scale', 'title' => 'Seeding limits', 'body' => 'Stop sharing at a ratio you choose, or after a set amount of time.'],
         ['icon' => 'adjustments-horizontal', 'title' => 'Speed limits', 'body' => 'Cap download and upload speeds so Joey never hogs your connection.'],
-        ['icon' => 'computer-desktop', 'title' => 'Lives in your menu bar', 'body' => 'See your speeds at a glance. Close the window and Joey keeps going.'],
-        ['icon' => 'bell', 'title' => 'Notifications', 'body' => 'Get a nudge the moment a download is finished.'],
+        ['icon' => 'computer-desktop', 'title' => 'Lives in your menu bar', 'body' => 'See your speeds at a glance and get a nudge when a download is done. Close the window and Joey keeps going.'],
         ['icon' => 'moon', 'title' => 'Stays awake', 'body' => 'Koalas sleep twenty hours a day. Your Mac won’t, at least not in the middle of a download.'],
         ['icon' => 'arrow-path', 'title' => 'Updates itself', 'body' => 'New versions arrive on their own. No need to come back here to check.'],
     ];
@@ -88,26 +88,30 @@
                         Small, native, and nothing to hide
                     </h2>
                     <p class="mt-6 max-w-[48ch] text-lg/8 text-pretty text-neutral-600">
-                        Joey is written in Swift and SwiftUI, so it looks and feels like it belongs on your Mac. The heavy lifting is done by libtorrent, the same proven engine behind qBittorrent and Deluge.
+                        Joey is written in Swift and SwiftUI, so it looks and feels like it belongs on your Mac. The heavy lifting is done by libtorrent, the same proven engine behind qBittorrent and Deluge, and videos play through mpv, the open-source player that handles just about any file.
                     </p>
                 </div>
                 <dl class="divide-y divide-gum-950/10 self-center">
                     <div class="flex items-baseline justify-between gap-x-6 pb-6">
                         <dt class="text-base/7 text-neutral-600">Download size</dt>
-                        <dd class="font-display text-3xl font-semibold tracking-tight text-gum-950 tabular-nums">9 MB</dd>
+                        <dd class="font-display text-2xl font-semibold tracking-tight text-gum-950 tabular-nums">35 MB</dd>
                     </div>
                     <div class="flex items-baseline justify-between gap-x-6 py-6">
                         <dt class="text-base/7 text-neutral-600">Ads, accounts and analytics</dt>
-                        <dd class="font-display text-3xl font-semibold tracking-tight text-gum-950">None</dd>
+                        <dd class="font-display text-2xl font-semibold tracking-tight text-gum-950">None</dd>
                     </div>
                     <div class="flex items-baseline justify-between gap-x-6 py-6">
                         <dt class="text-base/7 text-neutral-600">Torrent engine</dt>
-                        <dd class="font-display text-3xl font-semibold tracking-tight text-gum-950 tabular-nums">libtorrent 2.1</dd>
+                        <dd class="font-display text-2xl font-semibold tracking-tight text-gum-950 tabular-nums">libtorrent 2.1</dd>
+                    </div>
+                    <div class="flex items-baseline justify-between gap-x-6 py-6">
+                        <dt class="text-base/7 text-neutral-600">Video player</dt>
+                        <dd class="font-display text-2xl font-semibold tracking-tight text-gum-950">mpv</dd>
                     </div>
                     <div class="flex items-baseline justify-between gap-x-6 pt-6">
                         <dt class="text-base/7 text-neutral-600">Source code</dt>
-                        <dd class="font-display text-3xl font-semibold tracking-tight">
-                            <a href="{{ $repository }}" class="text-gum-700 underline decoration-gum-300 underline-offset-4 hover:decoration-gum-600">On GitHub</a>
+                        <dd class="font-display text-2xl font-semibold tracking-tight">
+                            <a href="{{ $repository }}" class="text-gum-700 underline decoration-gum-300 underline-offset-4 hover:decoration-gum-600">GitHub</a>
                         </dd>
                     </div>
                 </dl>
