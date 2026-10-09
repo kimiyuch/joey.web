@@ -7,7 +7,7 @@
         ['name' => 'Cosmos Laundromat', 'size' => '220.4 MB', 'progress' => 12, 'status' => 'Paused', 'speed' => '–', 'tone' => 'neutral'],
     ];
     $tones = [
-        'pouch' => ['bar' => 'bg-pouch-400', 'text' => 'text-pouch-500'],
+        'pouch' => ['bar' => 'bg-pouch-400', 'text' => 'text-pouch-600'],
         'gum' => ['bar' => 'bg-gum-400', 'text' => 'text-gum-600'],
         'neutral' => ['bar' => 'bg-neutral-300', 'text' => 'text-neutral-500'],
     ];
