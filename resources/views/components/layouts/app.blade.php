@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-white antialiased">
+<html lang="en" class="bg-white antialiased motion-safe:scroll-smooth">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
