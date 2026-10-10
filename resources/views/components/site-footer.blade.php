@@ -8,6 +8,7 @@
             <a href="/changelog" class="text-sm/6 font-normal text-neutral-600 hover:text-gum-700">Changelog</a>
             <a href="{{ $repository }}/releases" class="text-sm/6 font-normal text-neutral-600 hover:text-gum-700">Releases</a>
             <a href="{{ $repository }}/issues" class="text-sm/6 font-normal text-neutral-600 hover:text-gum-700">Report a problem</a>
+            <a href="/legal" class="text-sm/6 font-normal text-neutral-600 hover:text-gum-700">Legal</a>
         </nav>
     </div>
 </footer>
