@@ -11,7 +11,7 @@ class ChangelogPageTest extends TestCase
         $this->get('/changelog')
             ->assertOk()
             ->assertSee('What’s new in Joey')
-            ->assertSee('0.2.1')
+            ->assertSee('0.2.2')
             ->assertSee('Built-in video player');
     }
 

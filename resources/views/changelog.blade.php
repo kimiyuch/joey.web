@@ -1,6 +1,13 @@
 @php
     $releases = [
         [
+            'version' => '0.2.2',
+            'date' => '2026-10-10',
+            'changes' => [
+                'The player has buttons to skip back and forward 10 seconds.',
+            ],
+        ],
+        [
             'version' => '0.2.1',
             'date' => '2026-10-09',
             'changes' => [
