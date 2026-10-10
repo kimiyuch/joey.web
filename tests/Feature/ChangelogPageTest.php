@@ -40,7 +40,7 @@ class ChangelogPageTest extends TestCase
             ->assertSeeInOrder(['0.1', 'October 8, 2026', 'First release.']);
     }
 
-    public function test_changelog_is_fetched_at_most_once_an_hour(): void
+    public function test_changelog_is_cached_between_requests(): void
     {
         Http::fake([config('joey.changelog_url') => Http::response(self::CHANGELOG)]);
 

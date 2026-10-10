@@ -15,7 +15,8 @@ class Changelog
 {
     private const FILE = 'changelog.md';
 
-    private const MAX_AGE = 3600;
+    // Short, so a release shows up within minutes; it's still one small request every few minutes at most.
+    private const MAX_AGE = 300;
 
     /**
      * @return list<array{version: string, date: string, title: ?string, changes: list<string>}>
@@ -63,7 +64,7 @@ class Changelog
     }
 
     /**
-     * Fetched at most once an hour. If GitHub can't be reached, the last copy is kept for another hour.
+     * Fetched at most every five minutes. If GitHub can't be reached, the last copy is kept for another five.
      */
     private static function markdown(): string
     {
