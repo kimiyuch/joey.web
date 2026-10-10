@@ -16,8 +16,8 @@
     $playerFeatures = [
         ['icon' => 'film', 'title' => 'Plays just about anything', 'body' => 'MKV, MP4, AVI and most other formats, with hardware decoding. No codec packs, no second app.'],
         ['icon' => 'chat-bubble-bottom-center-text', 'title' => 'Subtitles and audio tracks', 'body' => 'Switch between embedded subtitles and audio languages, or add a subtitle file of your own.'],
-        ['icon' => 'bookmark', 'title' => 'Picks up where you left off', 'body' => 'Close a video halfway through and Joey remembers the spot, for every file.'],
-        ['icon' => 'queue-list', 'title' => 'Your videos, one keystroke away', 'body' => 'Press ⌘L for every video in your folder and its subfolders. Search it, see where you stopped, and click to play.'],
+        ['icon' => 'bookmark', 'title' => 'Picks up where you left off', 'body' => 'Joey remembers where you stopped in every file. Continue Watching, in the Watch tab, the Dock and the menu bar, takes you straight back.'],
+        ['icon' => 'queue-list', 'title' => 'All your videos in one list', 'body' => 'The Watch tab shows every video in your folder and its subfolders, and ⌘L brings the same list up in the player. Search, sort, and click to play.'],
         ['icon' => 'play-circle', 'title' => 'Watch while it downloads', 'body' => 'Download in order fetches a video from start to finish, so you can press play before it’s done.'],
         ['icon' => 'command-line', 'title' => 'Made for the keyboard', 'body' => 'Space to pause, arrow keys to skip 10 seconds, F or ⌘F for full screen. Media keys and Now Playing work too.'],
         ['icon' => 'sparkles', 'title' => 'Smooth on ProMotion', 'body' => 'Frames are timed to your display, so pans don’t stutter on 120 Hz screens.'],
