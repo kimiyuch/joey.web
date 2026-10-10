@@ -35,8 +35,8 @@
         {{-- Hero --}}
         <section class="relative pt-10 pb-24 sm:pt-16 sm:pb-32">
             <div class="mx-auto max-w-6xl px-6 text-center lg:px-8">
-                <a href="#player" class="mb-8 inline-flex items-center gap-x-2 rounded-full bg-white py-1 pr-3 pl-1 text-sm/6 font-medium text-gum-900 shadow-sm ring-1 ring-gum-950/10 hover:ring-gum-950/20">
-                    <span class="rounded-full bg-gum-600 px-2 text-xs/5 font-semibold text-white">New</span>
+                <a href="#player" class="mb-8 inline-flex items-center gap-x-2 rounded-full bg-white p-1 pr-2 text-sm/6 font-medium text-gum-900 shadow-sm ring-1 ring-gum-950/10 hover:ring-gum-950/20">
+                    <span class="rounded-full bg-gum-600 px-2 py-0.5 text-xs/5 font-semibold text-white">New</span>
                     A built-in video player
                     <x-heroicon-m-chevron-right class="size-4 shrink-0 fill-gum-500" />
                 </a>
