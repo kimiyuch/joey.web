@@ -5,13 +5,24 @@
     $features = [
         ['icon' => 'link', 'title' => 'Magnet links and torrent files', 'body' => 'Click a magnet link in your browser, double-click a .torrent file, or drop one onto the window.'],
         ['icon' => 'list-bullet', 'title' => 'Pick your files', 'body' => 'Only need one file from a big torrent? Untick the rest and Joey skips them.'],
-        ['icon' => 'film', 'title' => 'Built-in video player', 'body' => 'Watch what you’ve downloaded right in Joey, or open any video from Finder. MKV and most other formats, with subtitles, audio tracks and resume where you left off.'],
         ['icon' => 'play-circle', 'title' => 'Download in order', 'body' => 'Fetch a video from start to finish, so you can start watching before it’s done.'],
         ['icon' => 'scale', 'title' => 'Seeding limits', 'body' => 'Stop sharing at a ratio you choose, or after a set amount of time.'],
         ['icon' => 'adjustments-horizontal', 'title' => 'Speed limits', 'body' => 'Cap download and upload speeds so Joey never hogs your connection.'],
         ['icon' => 'computer-desktop', 'title' => 'Lives in your menu bar', 'body' => 'See your speeds at a glance and get a nudge when a download is done. Close the window and Joey keeps going.'],
         ['icon' => 'moon', 'title' => 'Stays awake', 'body' => 'Koalas sleep twenty hours a day. Your Mac won’t, at least not in the middle of a download.'],
         ['icon' => 'arrow-path', 'title' => 'Updates itself', 'body' => 'New versions arrive on their own. No need to come back here to check.'],
+    ];
+
+    $playerFeatures = [
+        ['icon' => 'film', 'title' => 'Plays just about anything', 'body' => 'MKV, MP4, AVI and most other formats, with hardware decoding. No codec packs, no second app.'],
+        ['icon' => 'chat-bubble-bottom-center-text', 'title' => 'Subtitles and audio tracks', 'body' => 'Switch between embedded subtitles and audio languages, or add a subtitle file of your own.'],
+        ['icon' => 'bookmark', 'title' => 'Picks up where you left off', 'body' => 'Close a video halfway through and Joey remembers the spot, for every file.'],
+        ['icon' => 'queue-list', 'title' => 'Your videos, one keystroke away', 'body' => 'Press ⌘L for every video in your folder and its subfolders. Search it, see where you stopped, and click to play.'],
+        ['icon' => 'play-circle', 'title' => 'Watch while it downloads', 'body' => 'Download in order fetches a video from start to finish, so you can press play before it’s done.'],
+        ['icon' => 'command-line', 'title' => 'Made for the keyboard', 'body' => 'Space to pause, arrow keys to skip 10 seconds, F or ⌘F for full screen. Media keys and Now Playing work too.'],
+        ['icon' => 'sparkles', 'title' => 'Smooth on ProMotion', 'body' => 'Frames are timed to your display, so pans don’t stutter on 120 Hz screens.'],
+        ['icon' => 'sun', 'title' => 'Screen stays on', 'body' => 'Your Mac won’t dim or doze off in the middle of a film.'],
+        ['icon' => 'folder-open', 'title' => 'Open from anywhere', 'body' => 'Play a finished download from Joey, or open any video with File → Open Video… or Open With in Finder.'],
     ];
 @endphp
 
@@ -24,6 +35,11 @@
         {{-- Hero --}}
         <section class="relative pt-10 pb-24 sm:pt-16 sm:pb-32">
             <div class="mx-auto max-w-6xl px-6 text-center lg:px-8">
+                <a href="#player" class="mb-8 inline-flex items-center gap-x-2 rounded-full bg-white py-1 pr-3 pl-1 text-sm/6 font-medium text-gum-900 shadow-sm ring-1 ring-gum-950/10 hover:ring-gum-950/20">
+                    <span class="rounded-full bg-gum-600 px-2 text-xs/5 font-semibold text-white">New</span>
+                    A built-in video player
+                    <x-heroicon-m-chevron-right class="size-4 shrink-0 fill-gum-500" />
+                </a>
                 <img src="{{ asset('images/joey.webp') }}" width="384" height="384" fetchpriority="high" alt="The Joey app icon: a baby koala peeking out of a blue folder" class="mx-auto size-32 sm:size-40">
                 <h1 class="mx-auto mt-8 max-w-[20ch] font-display text-5xl font-semibold tracking-tight text-balance text-gum-950 sm:text-7xl">
                     Torrents, tucked safely in the pouch
@@ -47,8 +63,35 @@
             </div>
         </section>
 
+        {{-- Player --}}
+        <section id="player" class="scroll-mt-8 bg-gum-950 py-24 sm:py-32">
+            <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                <p class="text-base/7 font-semibold text-gum-300">Built-in video player</p>
+                <h2 class="mt-2 max-w-[24ch] font-display text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
+                    Download it, then watch it right here
+                </h2>
+                <p class="mt-6 max-w-[52ch] text-lg/8 text-pretty text-gum-100/70">
+                    No hunting through Finder, no extra player to install. Joey plays what it downloads, and any other video on your Mac, with the formats, subtitles and shortcuts you’d expect from a proper player.
+                </p>
+
+                <x-player-window class="mt-16 sm:mt-20" />
+
+                <dl class="mt-20 grid grid-cols-1 gap-x-12 gap-y-12 sm:mt-24 sm:grid-cols-2 lg:grid-cols-3">
+                    @foreach ($playerFeatures as $feature)
+                        <div>
+                            <dt class="flex items-start gap-x-3 text-base/7 font-semibold text-white">
+                                <x-dynamic-component :component="'heroicon-m-'.$feature['icon']" class="size-5 h-lh shrink-0 fill-gum-300" />
+                                {{ $feature['title'] }}
+                            </dt>
+                            <dd class="mt-1 pl-8 text-base/7 text-pretty text-gum-100/70">{{ $feature['body'] }}</dd>
+                        </div>
+                    @endforeach
+                </dl>
+            </div>
+        </section>
+
         {{-- Features --}}
-        <section id="features" class="scroll-mt-8 border-t border-neutral-950/5 py-24 sm:py-32">
+        <section id="features" class="scroll-mt-8 py-24 sm:py-32">
             <div class="mx-auto max-w-6xl px-6 lg:px-8">
                 <p class="text-base/7 font-semibold text-gum-600">Features</p>
                 <h2 class="mt-2 max-w-[30ch] font-display text-4xl font-semibold tracking-tight text-balance text-gum-950 sm:text-5xl">
@@ -58,7 +101,7 @@
                     Joey does the job and stays out of the way. It sits in your menu bar, keeps your Mac awake while it works, and quietly shares back once it’s done.
                 </p>
 
-                <dl class="mt-16 grid grid-cols-1 gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+                <dl class="mt-16 grid grid-cols-1 gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
                     @foreach ($features as $feature)
                         <div>
                             <dt class="flex items-start gap-x-3 text-base/7 font-semibold text-gum-950">
