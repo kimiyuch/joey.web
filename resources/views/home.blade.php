@@ -50,7 +50,7 @@
                 <div class="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
                     <a href="{{ $download }}" class="inline-flex items-center gap-x-2 rounded-full bg-gum-600 py-3 pr-5 pl-4 text-base/6 font-semibold text-white shadow-sm hover:bg-gum-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gum-600">
                         <x-heroicon-m-arrow-down-tray class="size-5 shrink-0 fill-white" />
-                        Download for Mac
+                        <span>Download for Mac<span aria-hidden="true">*</span></span>
                     </a>
                     <a href="{{ $repository }}" class="inline-flex items-center gap-x-1.5 text-base/6 font-semibold text-gum-800 hover:text-gum-600">
                         View on GitHub
@@ -58,6 +58,10 @@
                     </a>
                 </div>
                 <p class="mt-6 text-base/7 text-neutral-500 sm:text-sm/6">Free · Apple Silicon · macOS 26 or later</p>
+                <p class="mt-1 text-base/7 text-pretty text-neutral-500 sm:text-sm/6">
+                    <span aria-hidden="true">*</span>Joey isn’t notarized by Apple, so the first launch needs one extra step.
+                    <a href="#install" class="font-medium whitespace-nowrap text-gum-700 hover:text-gum-600">See how <span aria-hidden="true">↓</span></a>
+                </p>
 
                 <x-app-window class="mx-auto mt-16 max-w-5xl text-left sm:mt-20" />
             </div>
