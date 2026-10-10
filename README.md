@@ -34,4 +34,4 @@ npm run build     # if you changed the design; commit public/build
 | `resources/css/app.css` | Theme colors (`gum` for eucalyptus, `pouch` for folder blue) and fonts |
 | `config/joey.php` | Repository and download links |
 
-Downloads always point at the latest GitHub release (`releases/latest/download/Joey.dmg`), so publishing a new version of the app doesn't require a change here.
+Downloads always point at the latest GitHub release (`releases/latest/download/Joey.dmg`), and the changelog page reads the `CHANGELOG.md` attached to that release (fetched at most once an hour, see `app/Changelog.php`), so publishing a new version of the app doesn't require a change here.
