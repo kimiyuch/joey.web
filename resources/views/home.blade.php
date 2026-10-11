@@ -194,6 +194,9 @@
                 <p class="mt-16 border-t border-neutral-950/5 pt-8 text-base/7 text-neutral-600 sm:text-sm/6">
                     Joey needs a Mac with Apple Silicon (M1 or newer) and macOS 26 or later. After the first launch it updates itself.
                 </p>
+                <p class="mt-2 text-base/7 text-pretty text-neutral-600 sm:text-sm/6">
+                    If your Mac’s firewall is on, macOS asks whether Joey may accept incoming network connections. Click Allow so other peers can reach you. Joey still works if you don’t, just more slowly.
+                </p>
             </div>
         </section>
     </main>
