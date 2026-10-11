@@ -27,6 +27,7 @@
 
     // Feedback from people using Joey, one quote per line. The section stays hidden while this is empty.
     $testimonials = [
+        'Flawlessly.',
     ];
 @endphp
 
