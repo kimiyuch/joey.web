@@ -11,6 +11,6 @@ class HomePageTest extends TestCase
         $this->get('/')
             ->assertOk()
             ->assertSee('Download for Mac')
-            ->assertSee(config('joey.download_url'), escape: false);
+            ->assertSee(url('/download'), escape: false);
     }
 }

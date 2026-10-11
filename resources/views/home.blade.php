@@ -1,5 +1,5 @@
 @php
-    $download = config('joey.download_url');
+    $download = url('/download');
     $repository = config('joey.repository_url');
 
     $features = [
