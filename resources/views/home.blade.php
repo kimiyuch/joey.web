@@ -24,6 +24,10 @@
         ['icon' => 'sun', 'title' => 'Screen stays on', 'body' => 'Your Mac won’t dim or doze off in the middle of a film.'],
         ['icon' => 'folder-open', 'title' => 'Open from anywhere', 'body' => 'Play a finished download from Joey, or open any video with File → Open Video… or Open With in Finder.'],
     ];
+
+    // Feedback from people using Joey, one quote per line. The section stays hidden while this is empty.
+    $testimonials = [
+    ];
 @endphp
 
 <x-layouts.app>
@@ -118,6 +122,29 @@
                 </dl>
             </div>
         </section>
+
+        {{-- Testimonials --}}
+        @if ($testimonials)
+            <section class="pb-24 sm:pb-32">
+                <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                    <p class="text-base/7 font-semibold text-gum-600">Kind words</p>
+                    <h2 class="mt-2 max-w-[30ch] font-display text-4xl font-semibold tracking-tight text-balance text-gum-950 sm:text-5xl">
+                        What people say about Joey
+                    </h2>
+
+                    <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        @foreach ($testimonials as $quote)
+                            <figure class="rounded-2xl bg-gum-50 p-8 ring-1 ring-gum-950/5">
+                                <svg viewBox="0 0 32 24" aria-hidden="true" class="h-6 fill-gum-300"><path d="M0 24V14.4C0 6.24 4.48 1.44 12.8 0l1.28 3.2C9.6 4.48 7.36 7.04 7.04 11.2H12.8V24H0Zm19.2 0V14.4C19.2 6.24 23.68 1.44 32 0l1.28 3.2c-4.48 1.28-6.72 3.84-7.04 8H32V24H19.2Z"/></svg>
+                                <blockquote class="mt-6 text-lg/8 text-pretty text-gum-950">
+                                    <p>{{ $quote }}</p>
+                                </blockquote>
+                            </figure>
+                        @endforeach
+                    </div>
+                </div>
+            </section>
+        @endif
 
         {{-- Under the hood --}}
         <section class="bg-gum-50 py-24 sm:py-32">
